@@ -1,5 +1,7 @@
 # 利用python实现自动化数据统计的脚本
 ## 项目介绍
+## 主要职责
+## 代码展示
 ### 导入python依赖包
 ```python
 import os
