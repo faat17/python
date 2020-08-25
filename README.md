@@ -19,7 +19,6 @@ from datetime import datetime,timedelta
 
 if __name__ == "__main__":
 ```
-
 ### 登录数据库
 ```python
     tmp_file1 = open('00TABLENMAE.csv', mode='w', newline='')
