@@ -1,12 +1,15 @@
 # 利用python实现自动化数据统计的脚本
 ## 项目介绍
 由于项目需求，每天需要跑不同的SQL语句来统计数据并对比差异，耗费大量的时间精力做重复的事情，严重影响工作效率，故提出一种基于面向对象的编程语言Python构建的自动化数据日报统计脚本，利用python语言的高效、灵活、简介等特点，结合os、psycopg2、pandas、smtplib等模块提供的强大功能，构建了一个可以自动进行提取、清洗、统计的python脚本，并通过linux服务器设置定时任务，完全解放人力，大量节约时间成本。
+
 ## 主要职责
 1. 与业务部门深度结合，并根据部门需求编写SQL语句从底层数据库中提取数据 
 2. 利用pandas对数据进行清洗和处理，对比今天与昨天的数据差异并输出为结果表，使用SMTP服务将结果发送至邮箱 
 3. 将python脚本固化至linux服务器中，并设置定时任务，实现日报的自动化统计功能，提升80%工作效率
+
 ## 代码展示
 ### 导入python依赖包
+
 ```python
 import os
 os.environ['NLS_LANG'] = 'AMERICAN_AMERICA.UTF8'
@@ -19,6 +22,7 @@ from datetime import datetime,timedelta
 
 if __name__ == "__main__":
 ```
+
 ### 登录数据库
 ```python
     tmp_file1 = open('00TABLENMAE.csv', mode='w', newline='')
